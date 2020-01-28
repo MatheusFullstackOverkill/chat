@@ -1,0 +1,15 @@
+.chat-container {
+   
+}
+
+.chat {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    border: 1px solid #666;
+}
+
+.input-container {
+    width: 500px;
+    margin: auto;
+}

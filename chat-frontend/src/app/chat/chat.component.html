@@ -1,0 +1,13 @@
+<div class="chat-container">
+    <div class="chat">
+        <div *ngFor='let message of messages; index as i;' [ngClass]="message['channel_name'] === channelName ? 'from_current_user' : 'from_other_user'">
+            <p>{{ message['message'] }}</p>
+        </div>
+    </div>
+    <div class="input-container">
+        <div>
+            <input type="text" [(ngModel)]='user_message' #ctrl="ngModel" />
+            <button (click)='onSend()'>Send</button>
+        </div>
+    </div>
+</div>
